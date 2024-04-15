@@ -1,14 +1,14 @@
 <html>
-	<body>
+<body>
 <script>
-async function testApi() {
-  const response = await fetch("/api/test");
-  const json = await response.json();
-  document.getElementById("time").innerText=json["time"]
-}
+    async function testApi() {
+        const response = await fetch("/api/test");
+        const json = await response.json();
+        document.getElementById("time").innerText = json["time"]
+    }
 </script>
 <button onclick="testApi()">test</button>
-<br />
+<br/>
 time: <span id="time">?</span>
 </body>
 </html>
